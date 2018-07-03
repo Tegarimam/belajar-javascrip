@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tap</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        <div class="container">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">Belajar Javascrip</a>
+                </li>
+                <li>
+                    <a href="../grafik/grafik.html">Grafik</a>
+                </li>
+                <li>
+                    <a href="../datepiker/datepicker.html">Datepecker</a>
+                </li>
+                <li>
+                    <a href="../peta lokasi/petalokasi.html">Peta lokasi</a>
+                </li>
+                <li>
+                    <a href="#">Tab</a>
+                </li>
+                <li>
+                    <a href="../model/model.html">Model</a>
+                </li>
+                <li>
+                    <a href="../datatable/datatable.html">Datatable</a>
+                </li>
+                <li>
+                    <a href="../timeline/timeline.html">Timeline</a>
+                </li>
+                 <li>
+                    <a href="../autoselect/autoselect.html">Aotuselect</a>
+                </li>
+                 <li>
+                    <a href="../ckeditor/ck/samples/coba.html">CKEditor</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Tap</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><div class="fa fa-search fa-1x"></div></a>
+                         <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+                          <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+                          <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+                        </div>
+                        <div class="container">
+                          <div id="Home" class="tabcontent">
+                            <img src="img/aku.jpg" width="30%">
+                            <h3>Tegar Imam Maulana</h3>
+                          </div>
+                        </div>
+
+                        <div id="About" class="tabcontent">
+                          <h4>Apa kabar ?<br>
+
+Selamat datang di blog baru saya.  Perkenalkan nama saya Bambang Priantono.  Orang-orang yang kenal saya biasanya memanggil saya Nono.  Saya asli Indonesia dan suka sekali menulis di blog. Kecintaan menulis tumbuh sejak pertama kali mengenal blog di tahun 2004. Dari yang tidak bisa menulis panjang lebar, hingga akhirnya berkembang menjadi penulis kecil-kecilan dan berlanjut dengan menaruh minat pada fotografi yang hingga sekarang masih belajaran dan perlu pengembangan terus menerus.<br>
+
+Hidup adalah pembelajaran, dan sepanjang kita bernafas akan terus belajar.<br>
+
+Saya asli Malang, sebuah kota di Jawa Timur, kemudian di kota Semarang, ibukota propinsi Jawa Tengah yang terkenal dengan Lunpianya selama 4 tahun. Dan kini perjalanan saya berlanjut di Kota Tangerang yang berada di sebelah barat Jakarta. Saya sangat menyukai menulis sampai sering ikut lomba macam-macam dan kadang menulis artikel baik di blog maupun di beberapa media cetak. Disamping itu saya sangat suka fotografi, menyanyi, serta sangat tertarik dengan bahasa serta kebudayaan.  Mengenal budaya lain merupakan kecintaan tersendiri bagi diri saya, kendati tetap lebih mendalami kebudayaan sendiri. Kenapa? Negeri saya sangat kaya dengan budaya yang sangat disayangkan bila tidak dilestarikan oleh anak negerinya sendiri.</h4>
+                        </div>
+
+                        <div id="Contact" class="tabcontent">
+                          <h3>Contact</h3>
+                          <p>087865291481</p>
+                        </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- /#page-content-wrapper -->
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+     
+</body>
+</html> 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contoh</title>
+	<link rel="stylesheet" type="text/css" href="css/samples.css">
+	<script src="../ckeditor.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        <div class="container">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../../../index.html">Belajar Javascrip</a>
+                </li>
+                <li>
+                    <a href="../../../grafik/grafik.html">Grafik</a>
+                </li>
+                <li>
+                    <a href="../../../datepiker/datepicker.html">Datepecker</a>
+                </li>
+                <li>
+                    <a href="../../../peta lokasi/petalokasi.html">Peta lokasi</a>
+                </li>
+                <li>
+                    <a href="../../../tap/tap.html">Tab</a>
+                </li>
+                <li>
+                    <a href="../../../model/model.html">Model</a>
+                </li>
+                <li>
+                    <a href="../../../datatable/datatable.html">Datatable</a>
+                </li>
+                <li>
+                    <a href="../../../timeline/timeline.html">Timeline</a>
+                </li>
+                 <li>
+                    <a href="../../../autoselect/autoselect.html">Aotuselect</a>
+                </li>
+                 <li>
+                    <a href="#">CKEditor</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+         <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>CKEditor</h1>
+                        <p><b>CKEditor</b> merupakan sebuah tool tambahan yang memiliki banyak fitur dalam membantu memberi format penulisan posting yang ingin kita tulis.</p>
+                       
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <div class="container">
+		<form>
+			<textarea name="editor1" id="tegar" rows="10" cols="80">
+				
+			</textarea>
+
+
+
+		<script >
+			CKEDITOR.replace( 'tegar' )
+		</script>
+
+		</form>
+	</div>
+</body>
+</html>

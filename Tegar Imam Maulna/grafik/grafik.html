@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>grafik</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        <div class="container">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">Belajar Javascrip</a>
+                </li>
+                <li>
+                    <a href="#">Grafik</a>
+                </li>
+                <li>
+                    <a href="../datepiker/datepicker.html">Datepecker</a>
+                </li>
+                <li>
+                    <a href="../peta lokasi/petalokasi.html">Peta lokasi</a>
+                </li>
+                <li>
+                    <a href="../tap/tap.html">Tab</a>
+                </li>
+                <li>
+                    <a href="../model/model.html">Model</a>
+                </li>
+                <li>
+                    <a href="../datatable/datatable.html">Datatable</a>
+                </li>
+                <li>
+                    <a href="../timeline/timeline.html">Timeline</a>
+                </li>
+                 <li>
+                    <a href="../autoselect/autoselect.html">Aotuselect</a>
+                </li>
+                 <li>
+                    <a href="../ckeditor/ck/samples/coba.html">CKEditor</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Grafik</h1>
+                        <p><b>Grafik</b> adalah alat yang dapat digunakan untuk mengkomunikasikan informasi secara grafis. Termasuk grafik dalam dokumen yang dapat membantu Anda menggambarkan data numerik, seperti perbandingan dan tren, sehingga lebih mudah bagi pembaca untuk memahaminya.</p>
+                       
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    </div>
+    <!-- /#wrapper -->
+<script src="code/highcharts.js"></script>
+<script src="code/modules/exporting.js"></script>
+<script src="code/modules/export-data.js"></script>
+
+ <div id="tegar" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto; background-color: green;"></div>
+
+
+
+<script type="text/javascript">
+
+Highcharts.chart('tegar', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Perkembangan Ekonomi NTB'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'Chrome',
+            y: 61.41,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'Internet Explorer',
+            y: 11.84
+        }, {
+            name: 'Firefox',
+            y: 10.85
+        }, {
+            name: 'Edge',
+            y: 4.67
+        }, {
+            name: 'Safari',
+            y: 4.18
+        }, {
+            name: 'Sogou Explorer',
+            y: 1.64
+        }, {
+            name: 'Opera',
+            y: 1.6
+        }, {
+            name: 'QQ',
+            y: 1.2
+        }, {
+            name: 'Other',
+            y: 2.61
+        }]
+    }]
+});
+		</script>
+</body>
+</html>

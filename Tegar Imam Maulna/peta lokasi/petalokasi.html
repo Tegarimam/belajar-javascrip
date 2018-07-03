@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>maps</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        <div class="container">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">Belajar Javascrip</a>
+                </li>
+                <li>
+                    <a href="../grafik/grafik.html">Grafik</a>
+                </li>
+                <li>
+                    <a href="../datepiker/datepicker.html">Datepecker</a>
+                </li>
+                <li>
+                    <a href="">Peta lokasi</a>
+                </li>
+                <li>
+                    <a href="../tap/tap.html">Tab</a>
+                </li>
+                <li>
+                    <a href="../model/model.html">Model</a>
+                </li>
+                <li>
+                    <a href="../datatable/datatable.html">Datatable</a>
+                </li>
+                <li>
+                    <a href="../timeline/timeline.html">Timeline</a>
+                </li>
+                 <li>
+                    <a href="../autoselect/autoselect.html">Aotuselect</a>
+                </li>
+                 <li>
+                    <a href="../ckeditor/ck/samples/coba.html">CKEditor</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Peta Lokasi (Maps)</h1>
+                        <p><b>Peta Lokasi</b> adalah layanan pemetaan web yang dikembangkan oleh Google. Layanan ini memberikan citra satelit, peta jalan, panorama 360°, kondisi lalu lintas, dan perencanaan rute untuk bepergian dengan berjalan kaki, mobil, sepeda (versi beta), atau angkutan umum.</p>
+                       <div id="map" style="width: 500px; height: 500px; background-color: #eaeaea;"></div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script>
+      function initMap() {
+        var uluru = {lat: -8.6131156, lng: 116.3289857};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYQqqe9vWTQNrf2pv3C9fdzAbukst7cKk&callback=initMap&libraries=places"></script> 
+
+</body>
+</html>

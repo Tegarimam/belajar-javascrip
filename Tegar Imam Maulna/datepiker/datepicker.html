@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calender</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        <div class="container">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">Belajar Javascrip</a>
+                </li>
+                <li>
+                    <a href="../grafik/grafik.html">Grafik</a>
+                </li>
+                <li>
+                    <a href="../datepiker/datepicker.html">Datepecker</a>
+                </li>
+                <li>
+                    <a href="../peta lokasi/petalokasi.html">Peta lokasi</a>
+                </li>
+                <li>
+                    <a href="../tap/tap.html">Tab</a>
+                </li>
+                <li>
+                    <a href="../model/model.html">Model</a>
+                </li>
+                <li>
+                    <a href="../datatable/datatable.html">Datatable</a>
+                </li>
+                <li>
+                    <a href="../timeline/timeline.html">Timeline</a>
+                </li>
+                 <li>
+                    <a href="../autoselect/autoselect.html">Aotuselect</a>
+                </li>
+                 <li>
+                    <a href="../ckeditor/ck/samples/coba.html">CKEditor</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Datepicker</h1>
+                        <p>Datepicker adalah sebuah aplikasiuntuk memilih tanggal</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+<div class="container">
+
+<form>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="Tanggal" placeholder="Tanggal">
+    </div>
+  </div>
+</form>
+</div>
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+	$('#Tanggal').datepicker(
+	{
+    format: 'dd/mm/yyyy',
+    startDate: '-3d'
+	}
+		);
+</script>
+</body>
+</html>
